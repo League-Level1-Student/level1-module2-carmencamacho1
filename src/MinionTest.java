@@ -24,19 +24,40 @@ import org.junit.Test;
 
 public class MinionTest {
 
-	@Test
-	public void testConstructor() {
-		Minion stuart = new Minion("Stuart", 1, "yellow", "");
-		assertEquals("Stuart", stuart.getName());
-		assertEquals(1, stuart.getEyes());
-		assertEquals("yellow", stuart.getColor());
-
-		Minion dave = new Minion("Dave", 2, "yellow", "");
-		assertEquals("Dave", dave.getName());
-		assertEquals(2, dave.getEyes());
-		assertEquals("yellow", dave.getColor());
+	class Temp{
+		Temp(int y){
+			System.out.println(y);
+		}
+		
 	}
-
+	
+//	@Test
+//	public void testStuff() {
+//		//assertEquals(5, addNumbers(2, 3));
+//		Temp p = new Temp(89);
+//		Temp p1 = new Temp(3);
+//		Temp p2= new Temp(6666);
+//		Temp p3 = new Temp(654);
+//		Temp p4 = new Temp(0);
+//		
+//	}
+//	int addNumbers(int x, int y) {
+//		return x + y;
+//		
+//	}
+//	@Test
+//	public void testConstructor() {
+//		Minion stuart = new Minion("Stuart", 1, "yellow", "");
+//		assertEquals("Stuart", stuart.getName());
+//		assertEquals(1, stuart.getEyes());
+//		assertEquals("yellow", stuart.getColor());
+//
+//		Minion dave = new Minion("Dave", 2, "yellow", "");
+//		assertEquals("Dave", dave.getName());
+//		assertEquals(2, dave.getEyes());
+//		assertEquals("yellow", dave.getColor());
+//	}
+//
 	@Test
 	public void testSetters() {
 		Minion stuart = new Minion("Stuart", 1, "yellow", "");

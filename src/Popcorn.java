@@ -37,7 +37,16 @@ class Microwave {
 }
 
 public class Popcorn {
-
+public static void main(String[] args) {
+	Popcorn dab = new Popcorn("corn");
+	Microwave whip = new Microwave ();
+	whip.putInMicrowave(dab);
+	whip.setTime(3);
+	whip.startMicrowave();
+	dab.applyHeat();
+	
+	
+}
 	private int kernels = 20;
 	private String flavor;
 
